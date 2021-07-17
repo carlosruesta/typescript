@@ -12,14 +12,18 @@ export class NegociacaoController {
         this.inputQuantidade = document.querySelector('#valor');
     }
 
-    adiciona() {
+    adiciona(): void {
+        const negociacao = this.criaNegociacao();
+        console.log(negociacao);
 
-        const negociacao = new Negociacao(
+    }
+
+    criaNegociacao(): Negociacao {
+        return new Negociacao(
             this.inputData.valueAsDate,
             this.inputQuantidade.valueAsNumber,
             this.inputValor.valueAsNumber
         );
-        console.log(negociacao);
     }
 
 }
