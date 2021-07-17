@@ -24,3 +24,12 @@
 - JS permite adição dinamica de atributos na classe
 - JS não forca a instanciar a classe com os atribuitos obrigatorios
 
+### Aula 02
+
+#### Instalando o typescript
+
+- Comando para instalar: npm install typescript@4.2.2 --save-dev
+- Ao executar o comando acima o npm já adicina a dependencia no package.json
+- O uso do Node.js não é opcional, pois o compilador depende desta plataforma para funcionar
+- O Typescript é baixado pelo seu gerenciador de pacotes npm. 
+- O código TypeScript precisa ser traduzido/convertido para um código em ECMASCRIPT para que seja entendido pelo navegador. Lembre-se que apenas ECMASCRIPT é suportado pelo navegador.
