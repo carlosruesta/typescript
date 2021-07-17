@@ -46,3 +46,13 @@
 - Mais configurações do compilador tsc: noImplicityAny
 - Retorno de método explícito. Declarando o tipo de retorno de função.
 - Conversão de valores da interface do usuário
+
+### Aula 04
+
+- Modelagem da classe Negociacoes
+- Utiliação de Generics
+- Revisão sobre encapsulamento
+- Questões de mutabilidade e como solucioná-la
+- O tipo ReadonlyArray
+- Adição de negociações em nossa lista
+
