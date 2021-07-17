@@ -6,3 +6,4 @@ console.log(negociacao);
 
 console.log(negociacao.volume);
 
+alert("vamos peru");
