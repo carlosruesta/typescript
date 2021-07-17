@@ -33,3 +33,12 @@
 - O uso do Node.js não é opcional, pois o compilador depende desta plataforma para funcionar
 - O Typescript é baixado pelo seu gerenciador de pacotes npm. 
 - O código TypeScript precisa ser traduzido/convertido para um código em ECMASCRIPT para que seja entendido pelo navegador. Lembre-se que apenas ECMASCRIPT é suportado pelo navegador.
+
+Configuração do compilador e papel do tsconfig.json
+
+Integração com scripts do Node.js
+
+Modificadores de accesso private e public
+
+Benefícios iniciais da linguagem TypeScript
+
