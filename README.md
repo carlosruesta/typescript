@@ -34,11 +34,15 @@
 - O Typescript é baixado pelo seu gerenciador de pacotes npm. 
 - O código TypeScript precisa ser traduzido/convertido para um código em ECMASCRIPT para que seja entendido pelo navegador. Lembre-se que apenas ECMASCRIPT é suportado pelo navegador.
 
-Configuração do compilador e papel do tsconfig.json
+- Configuração do compilador e papel do tsconfig.json
+- Integração com scripts do Node.js na configuração do typescript fazendo com que o browser seja atualizado automaticamente e nosso codigo compilado para EMACScript 
+- Modificadores de accesso private e public
+- Benefícios iniciais da linguagem TypeScript
 
-Integração com scripts do Node.js
+### Aula 03
 
-Modificadores de accesso private e public
-
-Benefícios iniciais da linguagem TypeScript
-
+- Evitando o usdo do tipo implícito 'any'
+- Benefícios da tipagem estática... tipamos todas as variveis, atribuitos e funcoes
+- Mais configurações do compilador tsc: noImplicityAny
+- Retorno de método explícito. Declarando o tipo de retorno de função.
+- Conversão de valores da interface do usuário
