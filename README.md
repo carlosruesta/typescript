@@ -88,3 +88,10 @@ _ O modificador protected
 - Validando negociações em dias úteis
 - Vantagens do uso de enums
 - Cuidados com enums
+                    
+### Aula 04
+
+- Revisão da lógica de conversão negociações
+- Método estáticos
+- Parâmetros opcionais
+
