@@ -1,4 +1,4 @@
-import {Negociacoes} from "../models/Negociacoes.js";
+import {Negociacoes} from "../models/negociacoes.js";
 import {Negociacao} from "../models/negociacao";
 import {View} from "./view.js";
 
