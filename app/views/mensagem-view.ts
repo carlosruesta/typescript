@@ -1,6 +1,6 @@
 import {View} from "./view.js";
 
-export class MensagemView extends View{
+export class MensagemView extends View<string> {
 
     template(mensagem: string): string {
         return `
@@ -8,7 +8,4 @@ export class MensagemView extends View{
         `;
     }
 
-    update(mensagem: string): void {
-        this.elemento.innerHTML = this.template(mensagem);
-    }
 }
