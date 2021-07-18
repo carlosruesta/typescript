@@ -1,5 +1,7 @@
 # typescript
 
+## Curso 01
+
 ### Aula 01
 
 #### Infra
@@ -63,3 +65,12 @@
 - O modificador readonly
 - Getters vs propriedades públicas em modo de leitura
 - Programação defensiva 
+
+## Curso 02
+
+### Aula 01
+
+- Inpiração no React para criação de templates declarativos e dinâmicos
+- Template dinâmico
+- Manipulação declarativa do DOM através de template
+- Formatação de datas usando Intl
