@@ -74,3 +74,10 @@
 - Template dinâmico
 - Manipulação declarativa do DOM através de template
 - Formatação de datas usando Intl
+
+### Aula 02
+
+_ Herança com TypeScript
+_ Classes com tipo genérico
+_ Classes abstratas
+_ O modificador protected
