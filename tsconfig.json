@@ -4,7 +4,9 @@
 		//"module": "commonjs",
 		"target": "ES6",
 		"noEmitOnError": true,
-		"noImplicitAny": true
+		"noImplicitAny": true,
+		"removeComments": true,
+		"strictNullChecks": true
 		//"sourceMap": true
 	},
     "include": [
