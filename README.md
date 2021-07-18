@@ -81,3 +81,10 @@ _ Herança com TypeScript
 _ Classes com tipo genérico
 _ Classes abstratas
 _ O modificador protected
+
+### Aula 03
+
+- Visibilidade de métodos
+- Validando negociações em dias úteis
+- Vantagens do uso de enums
+- Cuidados com enums
