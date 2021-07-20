@@ -105,3 +105,13 @@ _ Remoção de comentários do código compilado
 _ Ativação do strictNullChecks
 _ Como suprimir erros, quando fizer sentido, resultantes do strictNullChecks
 _ Benefícios do strictNullChecks no controle do fluxo da sua aplicação
+
+## Curso 03
+
+### Aula 01
+
+- Introdução e estrutura do projeto
+- Requisitos não funcionais
+- Decorator de método
+- Logar tempo de execução com decorator
+
