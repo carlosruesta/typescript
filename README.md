@@ -115,3 +115,11 @@ _ Benefícios do strictNullChecks no controle do fluxo da sua aplicação
 - Decorator de método
 - Logar tempo de execução com decorator
 
+### Aula 02
+
+- Decorator com parâmetro
+- Criação de um decorator de inspeção
+- Ordem de execução dos decorators
+- Simplicação no design de decorators
+- Portabilidade de funcionalidade antiga para decorators
+

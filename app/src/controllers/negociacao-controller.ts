@@ -4,6 +4,7 @@ import {NegociacoesView} from "../views/negociacoes-view.js";
 import {MensagemView} from "../views/mensagem-view.js";
 import {DateUtils} from "../utils/DateUtils.js";
 import {logarTempoExecucao} from "../decorators/logar-tempo-execucao.js";
+import {inspecionar} from "../decorators/inspecionar.js";
 
 export class NegociacaoController {
 
@@ -21,6 +22,7 @@ export class NegociacaoController {
         this.negociacoesView.update(this.negociacoes);
     }
 
+    @inspecionar
     @logarTempoExecucao(true)
     public adiciona(): void {
         const negociacao = Negociacao.criaDe(
