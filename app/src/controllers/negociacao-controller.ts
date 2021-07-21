@@ -5,20 +5,24 @@ import {MensagemView} from "../views/mensagem-view.js";
 import {DateUtils} from "../utils/DateUtils.js";
 import {logarTempoExecucao} from "../decorators/logar-tempo-execucao.js";
 import {inspecionar} from "../decorators/inspecionar.js";
+import {domInjector} from "../decorators/dom-injector.js";
 
 export class NegociacaoController {
 
+    @domInjector('#data')
     private inputData: HTMLInputElement ;
+    @domInjector('#quantidade')
     private inputQuantidade: HTMLInputElement;
+    @domInjector('#valor')
     private inputValor: HTMLInputElement;
     private negociacoes = new Negociacoes();
     private negociacoesView = new NegociacoesView('#negociacoesView');
     private mensagemView = new MensagemView("#mensagemView");
 
     constructor() {
-        this.inputData = document.querySelector('#data') as HTMLInputElement;
-        this.inputValor = document.querySelector('#quantidade') as HTMLInputElement;
-        this.inputQuantidade = document.querySelector('#valor') as HTMLInputElement;
+        // this.inputData = document.querySelector('#data') as HTMLInputElement;
+        // this.inputValor = document.querySelector('#quantidade') as HTMLInputElement;
+        // this.inputQuantidade = document.querySelector('#valor') as HTMLInputElement;
         this.negociacoesView.update(this.negociacoes);
     }
 
