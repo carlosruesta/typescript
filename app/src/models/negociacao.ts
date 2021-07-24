@@ -1,4 +1,6 @@
-export class Negociacao {
+import {Imprimivel} from "../utils/imprimivel.js";
+
+export class Negociacao implements Imprimivel {
 	// private _data: Date;
 	// private _quantidade: number;
 	// private _valor: number;
@@ -22,4 +24,14 @@ export class Negociacao {
 		const dataDate = new Date(data.replace(expReg, ','));
 		return new Negociacao(dataDate, parseInt(quantidade), parseFloat(valor));
 	}
+
+	public paraTexto(): string {
+		return `
+			Data: ${this._data.toString()},
+			Quantidade: ${this.quantidade},
+			Valor: ${this.valor}
+		`;
+	}
+
+
 }

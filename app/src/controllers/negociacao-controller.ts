@@ -2,7 +2,7 @@ import {Negociacao} from "../models/negociacao.js";
 import {Negociacoes} from "../models/negociacoes.js";
 import {NegociacoesView} from "../views/negociacoes-view.js";
 import {MensagemView} from "../views/mensagem-view.js";
-import {DateUtils} from "../utils/DateUtils.js";
+import {DateUtils} from "../utils/date-utils.js";
 import {logarTempoExecucao} from "../decorators/logar-tempo-execucao.js";
 import {inspecionar} from "../decorators/inspecionar.js";
 import {domInjector} from "../decorators/dom-injector.js";
@@ -40,6 +40,8 @@ export class NegociacaoController {
             return;
         }
         this.negociacoes.adiciona(negociacao);
+        console.log(negociacao.paraTexto());
+        console.log(this.negociacoes.paraTexto());
         this.limparFormulario();
         this.atualizaView();
     }
