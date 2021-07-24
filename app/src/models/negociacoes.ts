@@ -1,8 +1,7 @@
 import {Negociacao} from "./negociacao.js";
-import {Imprimivel} from "../interfaces/imprimivel.js";
-import {Comparavel} from "../interfaces/comparavel";
+import {ObjetoModelo} from "../interfaces/objeto-modelo.js";
 
-export class Negociacoes implements Imprimivel, Comparavel<Negociacoes> {
+export class Negociacoes implements ObjetoModelo<Negociacoes> {
     // private negociacoes: Array<Negociacao> = [];
     private negociacoes: Negociacao[] = [];
 
