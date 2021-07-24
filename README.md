@@ -138,3 +138,11 @@ _ Benefícios do strictNullChecks no controle do fluxo da sua aplicação
 - Definindo uma interface para a API
 - Isolando o acesso à API em um serviço
 
+### Aula 05
+
+- Chega de múltiplos console.log
+- Aplicação prática do Polimorfismo
+- Interface de método
+- Evitando importar negociações duplicadas
+- Estendendo interfaces
+- Geração de sourmaps e debug da aplicação no navegador
