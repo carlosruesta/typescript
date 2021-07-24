@@ -130,3 +130,11 @@ _ Benefícios do strictNullChecks no controle do fluxo da sua aplicação
 - Criação dinâmica de getters
 - O uso de Object.defineProperty
 - Cache de decorators
+
+### Aula 04
+
+- API externa
+- Consumindo API externa
+- Definindo uma interface para a API
+- Isolando o acesso à API em um serviço
+
