@@ -50,8 +50,29 @@ export class NegociacaoController {
         this.inputData.focus();
     }
 
-    private atualizaView() {
+    private atualizaView(): void {
         this.negociacoesView.update(this.negociacoes);
         this.mensagemView.update("Negociação adicionada com sucesso");
+    }
+
+    public importaDados(): void {
+        fetch('http://localhost:8080/dados')
+            .then(resp => resp.json())
+            .then(
+                (dados: any[]) => dados.map(
+                    dado => new Negociacao(
+                        new Date(),
+                        dado.vezes,
+                        dado.montante
+            )))
+            .then(
+                negociacoesDeHoje =>
+                    negociacoesDeHoje.forEach(
+                        (negocicaoDeHoje: Negociacao) => {
+                            this.negociacoes.adiciona(negocicaoDeHoje);
+                            this.negociacoesView.update(this.negociacoes);
+                            this.mensagemView.update("Negociações importadas com sucesso");
+                        }
+            ));
     }
 }
