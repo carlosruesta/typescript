@@ -7,7 +7,7 @@ import {logarTempoExecucao} from "../decorators/logar-tempo-execucao.js";
 import {inspecionar} from "../decorators/inspecionar.js";
 import {domInjector} from "../decorators/dom-injector.js";
 import {NegociacoesDoDiaService} from "../services/negociacoes-do-dia-service.js";
-import {imprimeNoConsole} from "../utils/imprimivel.js";
+import {imprimeNoConsole} from "../interfaces/imprimivel.js";
 
 export class NegociacaoController {
 
@@ -60,6 +60,14 @@ export class NegociacaoController {
 
     public importaDados(): void {
         NegociacoesDoDiaService.obterNegociacoes()
+            .then((negociacoesDeHoje: Negociacao[]) =>
+                negociacoesDeHoje.filter(
+                    (negocicaoDeHoje: Negociacao) => {
+                        return !this.negociacoes.lista()
+                            .some(negociacao => negociacao.ehIgual(
+                                negocicaoDeHoje
+                        ))
+            }))
             .then(
                 (negociacoesDeHoje: Negociacao[]) =>
                     negociacoesDeHoje.forEach(
