@@ -6,7 +6,7 @@ import {DateUtils} from "../utils/DateUtils.js";
 import {logarTempoExecucao} from "../decorators/logar-tempo-execucao.js";
 import {inspecionar} from "../decorators/inspecionar.js";
 import {domInjector} from "../decorators/dom-injector.js";
-import {NegociacaoDoDia} from "../interfaces/negociacao-do-dia.js";
+import {NegociacoesDoDiaService} from "../services/negociacoes-do-dia-service.js";
 
 export class NegociacaoController {
 
@@ -57,17 +57,9 @@ export class NegociacaoController {
     }
 
     public importaDados(): void {
-        fetch('http://localhost:8080/dados')
-            .then(resp => resp.json())
+        NegociacoesDoDiaService.obterNegociacoes()
             .then(
-                (negociacoesDoDia: NegociacaoDoDia[]) => negociacoesDoDia.map(
-                    negociacaoDoDia => new Negociacao(
-                        new Date(),
-                        negociacaoDoDia.vezes,
-                        negociacaoDoDia.montante
-            )))
-            .then(
-                negociacoesDeHoje =>
+                (negociacoesDeHoje: Negociacao[]) =>
                     negociacoesDeHoje.forEach(
                         (negocicaoDeHoje: Negociacao) => {
                             this.negociacoes.adiciona(negocicaoDeHoje);
